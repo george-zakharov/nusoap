@@ -33,6 +33,10 @@ class wsdl extends nusoap_base
     var $status = '';
     var $documentation = false;
     var $endpoint = '';
+	var $wsdl_info;
+    var $currentPortOperation;
+    var $opStatus;
+    var $serviceName;
     // array of wsdl docs to import
     var $import = array();
     // parser vars
@@ -1960,3 +1964,4 @@ class wsdl extends nusoap_base
         return true;
     }
 }
+
