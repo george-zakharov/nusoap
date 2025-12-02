@@ -38,6 +38,8 @@ class nusoap_client extends nusoap_base
     var $responseHeader = null;        // SOAP Header from response (parsed)
     var $document = '';                // SOAP body response portion (incomplete namespace resolution) (text)
     var $endpoint;
+	var $wsdlFile;
+    var $wsdl;
     var $forceEndpoint = '';        // overrides WSDL endpoint
     var $proxyhost = '';
     var $proxyport = '';
@@ -1065,3 +1067,4 @@ if (!extension_loaded('soap')) {
     {
     }
 }
+
